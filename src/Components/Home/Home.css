@@ -1,0 +1,25 @@
+.image-size{
+    height: 700px;
+   
+}
+
+.slide-caption{
+    text-shadow: 2px 2px black;
+    color: white;
+}
+
+.first-section-image-height{
+    height: 500px;
+}
+.first-section{
+    color: rgb(43, 43, 92);;
+}
+.arrow {
+    position: relative;
+    top: 0;
+    transition: top ease 0.5s;
+    cursor: pointer;
+  }
+  .arrow:hover {
+    top: -10px;
+  }
