@@ -7,9 +7,9 @@ import slideThree from '../Images/slideThree.jpg'
 import Offers from '../Offers/Offers'
 import benefits from '../Images/benefits.jpg'
 import './Home.css'
-import planningOne from '../Images/planningOne.png'
-import planningTwo from '../Images/planningTwo.png'
-import planningThree from '../Images/planningThree.png'
+import planningOne from '../Images/planningOne.jpg'
+import planningTwo from '../Images/planningTwo.jpg'
+import planningThree from '../Images/planningThree.jpg'
 
 
 const Home = () => {
@@ -33,7 +33,7 @@ const Home = () => {
                     alt="First slide"
                     />
                     <Carousel.Caption>
-                    <h1 className="text-white slide-caption">Thrope Park</h1>
+                    <h1 className="text-white slide-caption">Thorpe Park</h1>
                     <p className="text-white fs-3 slide-caption">Bangladesh's most thrilling theme park</p>
                     </Carousel.Caption>
                 </Carousel.Item>
@@ -45,7 +45,7 @@ const Home = () => {
                     />
                     <Carousel.Caption>
                     <h1 className="text-white slide-caption">Rides And Experiences</h1>
-                    <p className="text-white fs-3 slide-caption">From 17 world-className roller coasters to three areas filled with rides and attractions for kids and families, plus an 18-acre waterpark with plunging slides,plus an 18-acre waterpark with plunging slides.</p>
+                    <p className="text-white fs-3 slide-caption">From 17 world-class roller coasters to three areas filled with rides and attractions for kids and families, plus an 18-acre waterpark with plunging slides,plus an 18-acre waterpark with plunging slides.</p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -87,7 +87,7 @@ const Home = () => {
                 
                 <div className="col arrow">
                     <div class="card">
-                    <img src={planningOne} className="card-img-top" alt="..."/>
+                    <img src={planningOne} className="card-img-top event-image" alt="..."/>
                     <div className="card-body">
                         <h5 className="card-title text-center">Hanging out with friends</h5>
                         
@@ -96,7 +96,7 @@ const Home = () => {
                 </div>
                 <div className="col arrow">
                     <div className="card">
-                    <img src={planningTwo} className="card-img-top" alt="..."/>
+                    <img src={planningTwo} className="card-img-top event-image" alt="..."/>
                     <div className="card-body">
                         <h5 className="card-title text-center">Spending Time with family</h5>
                         
@@ -105,9 +105,9 @@ const Home = () => {
                 </div>
                 <div className="col arrow">
                     <div className="card">
-                    <img src={planningThree} className="card-img-top" alt="..."/>
+                    <img src={planningThree} className="card-img-top event-image" alt="..."/>
                     <div className="card-body">
-                        <h5 className="card-title text-center">Having fun with my kids</h5>
+                        <h5 className="card-title text-center">Spending time with the special one</h5>
                         
                     </div>
                     </div>

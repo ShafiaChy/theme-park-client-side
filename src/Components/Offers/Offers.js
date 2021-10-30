@@ -1,7 +1,16 @@
 import React from 'react';
+import { useHistory } from 'react-router';
+import { Link } from 'react-router-dom';
 import './Offer.css'
+
 const Offers = (props) => {
-    const {image,name,price,description} = props.offer;
+    const {_id,image,name,price,description} = props.offer;
+
+    const history = useHistory();
+    const handleDetails = () => {
+        
+        history.push('/place-order');
+    }
     return (
         <div>
             <div className="col">
@@ -11,7 +20,8 @@ const Offers = (props) => {
                             <h5 className="card-title">{name}</h5>
                             <h5 className="card-text">Tk: {price}/-</h5>
                             <p className="card-text">{description}</p>
-                            <button className="py-2 px-3 rounded button-bg">BUY NOW</button>
+                           <Link to={`/place-order/${_id}`}>
+                            <button onClick={handleDetails} className="py-2 px-3 rounded button-bg">BUY NOW</button></Link>
                         </div>
                        
                         

@@ -12,7 +12,7 @@ const Header = () => {
         <div>
             <Navbar collapseOnSelect expand="lg" variant="dark" className="navbar-bg">
             <Container className="py-3">
-                <Navbar.Brand href="#home">Thrope Park</Navbar.Brand>
+                <Navbar.Brand href="#home">Thorpe Park</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto">
