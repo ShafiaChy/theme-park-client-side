@@ -7,13 +7,15 @@ const MyOrder = () => {
  
     const {user} = useAuth();
 
+    //LOADING ORDER DATA TO MATCH THE EMAIL IN ORDER WITH THE EMAIL AFTER LOGINING
     useEffect(() => {
-        fetch('http://localhost:5000/orders')
+        fetch('https://haunted-dungeon-90790.herokuapp.com/orders')
         .then(res => res.json())
         .then(data => setMyOrder(data))
     },[])
     const chosenOrders = myOrders.filter(myOrder => myOrder.email == user.email)
 
+    //MAPPING THE DATA FOUND WHEN MATCHED EMAILS FOUND
     
     return (
         <div>

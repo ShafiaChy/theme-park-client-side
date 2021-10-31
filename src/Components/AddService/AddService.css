@@ -6,3 +6,8 @@
 .input-textarea{
     height: 70px;
 }
+
+.add-a-service-div{
+    background-color: rgba(43, 43, 92, 0.377);
+    box-shadow: 5px 10px #888888;
+}

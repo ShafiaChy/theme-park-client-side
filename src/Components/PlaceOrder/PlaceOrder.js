@@ -16,21 +16,22 @@ const PlaceOrder = () => {
 
     //data load
     useEffect(() => {
-    fetch('http://localhost:5000/offers')
+    fetch('https://haunted-dungeon-90790.herokuapp.com/offers')
     .then(res => res.json())
     .then(data => setDetails(data))
- 
+  
     },[])
 
       
-     const singleOffer = details.filter(detail => detail._id == id)
+     const singleOffer = details.filter(detail => detail.key == id)
         
     //console.log(singleOffer)
       
     const onSubmit = data =>{ 
+        console.log(data)
         data.order=id;
         data.status='Pending'
-        fetch('http://localhost:5000/orders', {
+        fetch('https://haunted-dungeon-90790.herokuapp.com/orders', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -54,7 +55,7 @@ const PlaceOrder = () => {
                 <div className="card w-50 ms-5 mb-3">
                     <img className="card-img-top" src={singleOffer[0]?.image} alt="Card cap"/>
                     <div className="card-body">
-                    <h5 className="card-title">{singleOffer[0]?.name}/-</h5>
+                    <h5 className="card-title">{singleOffer[0]?.name}</h5>
                     <h5 className="card-title">Tk:{singleOffer[0]?.price}/-</h5>
                     <p className="card-text">{singleOffer[0]?.detailedInfo}</p>
                     </div>

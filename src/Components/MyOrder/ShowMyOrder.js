@@ -5,16 +5,18 @@ const ShowMyOrder = (props) => {
     const {order,status, _id} = props.chosenOrder;
     //console.log(order)
    
+    //LOADING OFFERS DATA TO MATCH THE OFFER KEY WITH THE ORDER KEY 
     useEffect(() => {
-        fetch('http://localhost:5000/offers')
+        fetch('https://haunted-dungeon-90790.herokuapp.com/offers')
         .then(res => res.json())
         .then(data => setChosenOffer(data))
     },[])
     
     const myOffers = chosenOffers.filter(chosenOffer => chosenOffer.key == order)
 
+    //DELETING ORDERS BY USERS
     const handleDelete = id =>{
-        const url = `http://localhost:5000/orders/${id}`;
+        const url = `https://haunted-dungeon-90790.herokuapp.com/orders/${id}`;
         fetch(url, {
             method: 'DELETE'
         })
@@ -38,6 +40,7 @@ const ShowMyOrder = (props) => {
     }
 
     //console.log(myOffers)
+    //SHOWING THE USER'S ORDER
     return (
         <div>
          <div className="card mb-3 w-75 mx-auto mt-3">

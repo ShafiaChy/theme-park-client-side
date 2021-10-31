@@ -1,4 +1,5 @@
 .footer-div{
     width: 100%;
-    position: relative;
+    position: absolute;
+    margin-top: 400px;
 }
