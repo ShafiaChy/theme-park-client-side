@@ -25,8 +25,9 @@ const AddService = () => {
                 <h2 className="text-center mb-4 mx-3">Add a new service</h2>
             <div className="ms-3">
             <form onSubmit={handleSubmit(onSubmit)}>
+              
             <div className="row mb-3">
-                    
+                      {/* keys 100-105 are taken */}
                     <label htmlFor="inputId" className="col-sm-2 col-form-label">Offer Key</label>
                     <div className="col-sm-10">
                     <input type="number" className="w-75 w-sm-100 rounded border-1 input-height" {...register("key")} placeholder="start with 106" />
