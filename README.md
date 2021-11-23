@@ -1,7 +1,7 @@
 # Thorpe Park.
 
 
-My project link: [Thorpe Park.](https://theme-park-app.web.app).
+My project link: [Thorpe Park](https://theme-park-app.web.app).
 
 ## About my project
 <ol>
