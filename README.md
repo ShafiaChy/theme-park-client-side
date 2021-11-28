@@ -9,10 +9,10 @@ My project link: [Thorpe Park](https://theme-park-app.web.app).
     <li>It is a responsive website made with <b>ReactJS</b> and <b>Bootstrap</b></li>
     <li>Implemented the Bootstrap framework for developing a responsive website for devices of different sizes</li>
     <li>Has two-way login systems (Google and Email/Password) via Firebase for the users and the admin</li>
-    <li></li>
     <li><b>Firebase</b> is used for authentication and <b>MongoDB</b> database is used to store the data</li>
     <li><b>React Router Dom</b> is used to navigate the routes.</li>
     <li>The website allows the users to buy tickets by clicking a button.</li>
+    <li>Users can add their orders by submitting a form made with React Hook Form</li>
     <li>When the BUY NOW button is clicked the user will be directed to the Place Order page. If, however, the user is not logged in, they will be led to the login page.After logging in with valid information, the users will be rediected to the Place Order</li>
     <li>The PlaceOrder, Add a New Service, My Order and Manage Orders are private routes. These routes will only be shown when the users are logged in.</li>
     <li>The website uses react-router-dom so it doesnt reload the page everytime a link on the navbar is clicked.</li>
