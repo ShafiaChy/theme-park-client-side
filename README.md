@@ -5,8 +5,11 @@ My project link: [Thorpe Park](https://theme-park-app.web.app).
 
 ## About my project
 <ol>
-    <li>Thorpe Park is a website for purchasing tickets to get access to Thorpe rides and other offers.</li>
+    <li>It is a theme park website for purchasing tickets to get access to Thorpe rides and other offers.It focuses on front-end and backend developments.</li>
     <li>It is a responsive website made with <b>ReactJS</b> and <b>Bootstrap</b></li>
+    <li>Implemented the Bootstrap framework for developing a responsive website for devices of different sizes</li>
+    <li>Has two-way login systems (Google and Email/Password) via Firebase for the users and the admin</li>
+    <li></li>
     <li><b>Firebase</b> is used for authentication and <b>MongoDB</b> database is used to store the data</li>
     <li><b>React Router Dom</b> is used to navigate the routes.</li>
     <li>The website allows the users to buy tickets by clicking a button.</li>
